@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E26F9D526E349DF00902E47 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26F9D426E349DF00902E47 /* AddViewController.swift */; };
 		0E918AD326E323C3006FD827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E918AD226E323C3006FD827 /* AppDelegate.swift */; };
 		0E918AD526E323C3006FD827 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E918AD426E323C3006FD827 /* SceneDelegate.swift */; };
 		0E918AD726E323C3006FD827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E918AD626E323C3006FD827 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E26F9D426E349DF00902E47 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		0E918ACF26E323C3006FD827 /* UserNotifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserNotifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E918AD226E323C3006FD827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E918AD426E323C3006FD827 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				0E918AD226E323C3006FD827 /* AppDelegate.swift */,
 				0E918AD426E323C3006FD827 /* SceneDelegate.swift */,
 				0E918AD626E323C3006FD827 /* ViewController.swift */,
+				0E26F9D426E349DF00902E47 /* AddViewController.swift */,
 				0E918AD826E323C3006FD827 /* Main.storyboard */,
 				0E918ADE26E323C3006FD827 /* Assets.xcassets */,
 				0E918AE026E323C3006FD827 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				0E918AD726E323C3006FD827 /* ViewController.swift in Sources */,
 				0E918AD326E323C3006FD827 /* AppDelegate.swift in Sources */,
 				0E918AD526E323C3006FD827 /* SceneDelegate.swift in Sources */,
+				0E26F9D526E349DF00902E47 /* AddViewController.swift in Sources */,
 				0E918ADD26E323C3006FD827 /* UserNotifi.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
