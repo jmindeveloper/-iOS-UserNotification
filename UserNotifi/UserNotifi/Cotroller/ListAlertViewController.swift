@@ -26,11 +26,18 @@ class ListAlertViewController: UIViewController {
 extension ListAlertViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return lists.count
+        if section == 0 {
+            return lists.count
+        } else {
+            return 1
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCellSection1 else { return UICollectionViewCell() }
+        guard let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as? CollectionViewCellSection2 else { return UICollectionViewCell() }
+        
+        // cell 1
         cell.cellView.layer.cornerRadius = 20
         cell.layer.shadowRadius = 2
         cell.layer.shadowOpacity = 0.3
@@ -39,25 +46,33 @@ extension ListAlertViewController: UICollectionViewDataSource, UICollectionViewD
         
         let img = UIImage(systemName: "\(lists[indexPath.row].image)")
         
-//        cell.image = UIImage(named: "\(lists[indexPath.row])")
         cell.date.text = lists[indexPath.row].date
         cell.count.text = String(lists[indexPath.row].count)
         cell.image.image = img
         
-        return cell
+        if indexPath.section == 0 {
+            return cell
+        } else if indexPath.section == 1 {
+            return cell2
+        } else {
+            return UICollectionViewCell()
+        }
     }
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
 }
 
 extension ListAlertViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width: CGFloat = (collectionView.bounds.width - (20 * 3)) / 2
-        let height: CGFloat = width - 80
+        let height: CGFloat = 100
         return CGSize(width: width, height: height)
     }
 }
 
-class CollectionViewCell: UICollectionViewCell {
+class CollectionViewCellSection1: UICollectionViewCell {
     
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var image: UIImageView!
@@ -65,6 +80,9 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var count: UILabel!
     
     
+}
+
+class CollectionViewCellSection2: UICollectionViewCell {
     
 }
 
