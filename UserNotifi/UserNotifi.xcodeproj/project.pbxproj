@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1967AD26EB28D50004F7D8 /* ListAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1967AC26EB28D50004F7D8 /* ListAlertViewController.swift */; };
+		0E1967AF26EB29010004F7D8 /* ShowAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1967AE26EB29010004F7D8 /* ShowAlertViewController.swift */; };
+		0E1967B226EB37CA0004F7D8 /* CellList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1967B126EB37CA0004F7D8 /* CellList.swift */; };
 		0E918AD326E323C3006FD827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E918AD226E323C3006FD827 /* AppDelegate.swift */; };
 		0E918AD526E323C3006FD827 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E918AD426E323C3006FD827 /* SceneDelegate.swift */; };
-		0E918AD726E323C3006FD827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E918AD626E323C3006FD827 /* ViewController.swift */; };
 		0E918ADA26E323C3006FD827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E918AD826E323C3006FD827 /* Main.storyboard */; };
 		0E918ADD26E323C3006FD827 /* UserNotifi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E918ADB26E323C3006FD827 /* UserNotifi.xcdatamodeld */; };
 		0E918ADF26E323C3006FD827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E918ADE26E323C3006FD827 /* Assets.xcassets */; };
@@ -17,10 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E1967AC26EB28D50004F7D8 /* ListAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAlertViewController.swift; sourceTree = "<group>"; };
+		0E1967AE26EB29010004F7D8 /* ShowAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlertViewController.swift; sourceTree = "<group>"; };
+		0E1967B126EB37CA0004F7D8 /* CellList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellList.swift; sourceTree = "<group>"; };
 		0E918ACF26E323C3006FD827 /* UserNotifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserNotifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E918AD226E323C3006FD827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E918AD426E323C3006FD827 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E918AD626E323C3006FD827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E918AD926E323C3006FD827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E918ADC26E323C3006FD827 /* UserNotifi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserNotifi.xcdatamodel; sourceTree = "<group>"; };
 		0E918ADE26E323C3006FD827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1967AB26EB28C00004F7D8 /* Cotroller */ = {
+			isa = PBXGroup;
+			children = (
+				0E1967AC26EB28D50004F7D8 /* ListAlertViewController.swift */,
+				0E1967AE26EB29010004F7D8 /* ShowAlertViewController.swift */,
+			);
+			path = Cotroller;
+			sourceTree = "<group>";
+		};
+		0E1967B026EB379D0004F7D8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0E1967B126EB37CA0004F7D8 /* CellList.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		0E918AC626E323C3006FD827 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +79,10 @@
 		0E918AD126E323C3006FD827 /* UserNotifi */ = {
 			isa = PBXGroup;
 			children = (
+				0E1967B026EB379D0004F7D8 /* Data */,
+				0E1967AB26EB28C00004F7D8 /* Cotroller */,
 				0E918AD226E323C3006FD827 /* AppDelegate.swift */,
 				0E918AD426E323C3006FD827 /* SceneDelegate.swift */,
-				0E918AD626E323C3006FD827 /* ViewController.swift */,
 				0E918AD826E323C3006FD827 /* Main.storyboard */,
 				0E918ADE26E323C3006FD827 /* Assets.xcassets */,
 				0E918AE026E323C3006FD827 /* LaunchScreen.storyboard */,
@@ -140,10 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E918AD726E323C3006FD827 /* ViewController.swift in Sources */,
+				0E1967AF26EB29010004F7D8 /* ShowAlertViewController.swift in Sources */,
+				0E1967B226EB37CA0004F7D8 /* CellList.swift in Sources */,
 				0E918AD326E323C3006FD827 /* AppDelegate.swift in Sources */,
 				0E918AD526E323C3006FD827 /* SceneDelegate.swift in Sources */,
 				0E918ADD26E323C3006FD827 /* UserNotifi.xcdatamodeld in Sources */,
+				0E1967AD26EB28D50004F7D8 /* ListAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
